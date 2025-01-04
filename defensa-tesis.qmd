@@ -1,0 +1,32 @@
+---
+title: "Espectadores y futura participación en protestas. El rol de la identidad, la
+legitimidad y percepción de la violencia"
+subtitle: Defensa para optar al título profesional de Socióloga
+format: 
+  clean-revealjs:
+    self-contained: true
+html-math-method:
+  method: mathjax
+  url: "https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
+author:
+  - name: Moira Martínez Sembler
+    email: Facultad de Ciencias Sociales
+    affiliations: Universidad de Chile
+date: "2025-01-14"
+lang: es
+---
+
+## **Introducción**
+
+### ¿Qué pasa con el que no participa?
+
+- Las protestas se encuentran frescas en la memoria del país, y se han
+posicionado dentro de las principales discusiones en el espacio público.
+    - Estallido social de octubre de 2019, polarización del debate público, resurgimiento de ideas contrarias a la movilización...
+    
+- 
+
+
+
+
+
