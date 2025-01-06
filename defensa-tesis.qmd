@@ -32,7 +32,31 @@ posicionado dentro de las principales discusiones en el espacio público.
 
 - Dentro de los predictores importantes de la participación en protestas destaca la [identificación con los manifestantes]{.fg style="--col: #38777d"} y la [legitimidad de la protesta.]{.fg style="--col: #38777d"} 
 
+- El panorama de las movilizaciones ha estado marcado por [el uso de la violencia]{.fg style="--col: #38777d"}  por parte de los
+manifestantes y las fuerzas policiales. 
 
+::: {.callout-note icon=false}
 
+## Entonces...
+
+Interesa abordar estos elementos considerando el particular momento vivido en el país. Por un lado, para **ahondar en la investigación de movimientos sociales y protestas en Chile.** Por otro lado, para **someter a discusión el rol de los espectadores** en la reproducción de los movimientos sociales. 
+
+:::
+
+## **Pregunta de investigación**
+
+<div style="background-color: #f0f8ff; padding: 10px; border-radius: 5px; text-align: center; margin-top: 100px;">
+  <span style="font-size: 1em; color: #0e0e0e;">
+    *¿Cómo influyen la identificación con los manifestantes,
+la legitimidad de las protestas y la percepción de los entes causantes de la violencia
+intergrupal en la disposición a participar en protestas futuras de los espectadores de éstas?*
+  </span>
+  <br><br>
+</div>
+
+## **Hipótesis**
+
+![Figura 1. Modelo hipotetizado](input/modelo_teorico.jpeg)
+## Método
 
 
