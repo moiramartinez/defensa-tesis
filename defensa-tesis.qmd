@@ -1,6 +1,5 @@
 ---
-title: "Espectadores y futura participación en protestas. El rol de la identidad, la
-legitimidad y percepción de la violencia"
+title: "Espectadores y futura participación en protestas. El rol de la identidad, la legitimidad y percepción de la violencia"
 subtitle: Defensa para optar al título profesional de Socióloga
 format: 
   clean-revealjs:
@@ -57,6 +56,74 @@ intergrupal en la disposición a participar en protestas futuras de los espectad
 ## **Hipótesis**
 
 ![Figura 1. Modelo hipotetizado](input/modelo_teorico.jpeg)
-## Método
+
+## **Método**
+
+- Enfoque **cuantitativo**. 
+
+- Datos producidos a partir de la encuesta mixta de espectadores desarrollada por el equipo a cargo del proyecto FONDECYT Regular 1220385 *“Mecanismos autoreforzantes de los ciclos de protesta y los estallidos sociales”*.
+
+- La población objetivo del estudio corresponde a los **espectadores de la protesta en
+Chile**. La muestra se encontró constituida por espectadores mayores de 18 años en Chile que no participaron en actividades relacionadas con las protestas en los últimos 5 años, exceptuando el Estallido Social.
+
+- Muestreo por cuotas representativas según nivel socioeconómico y género procurando preservar las
+diferencias proporcionales en población entre Santiago y Concepción. La muestra total alcanzó las **935 personas**.
+
+- La estrategia de análisis consistió en 3 pasos: análisis descriptivo, análisis inferencial bivariado y análisis multivariado mediante modelos de ecuaciones estructurales.
+
+
+## **Resultados**
+### Modelo final
+
+![Figura 2. Resultados modelo final](input/modelo_resultados.jpeg)
+
+## **Resultados**
+### El rol de la identidad y la legitimidad.
+
+```{r}
+library(flextable)
+library(tidyverse)
+```
+
+
+```{r}
+# Crear un dataframe de ejemplo
+tabla <- data.frame(
+  Sendero = c(
+    "A. Identificación con los manifestantes → Disposición\na participar en futuras protestas",
+    "B. Identificación con los manifestantes → Legitimidad\nde la protesta → Disposición a participar en futuras protestas",
+    "C. Identificación con los manifestantes → Percepción\nde Carabineros como causantes de la violencia en las protestas → Disposición a participar en futuras protestas",
+    "D. Identificación con los manifestantes → Legitimidad\nde la protesta → Percepción de los manifestantes como causantes de la violencia en las protestas → Disposición a participar en futuras protestas",
+    "E. Identificación con los manifestantes → Legitimidad\nde la protesta → Percepción de Carabineros como causantes de la violencia en las protestas → Disposición a participar en futuras protestas",
+    "Total indirecto",
+    "Total (directo + indirectos)"
+  ),
+  b = c(0.25, 0.11, 0.08, 0.003, 0.06, 0.26, 0.51),
+  `Std(b)` = c(0.03, 0.02, 0.01, 0.002, 0.01, 0.02, 0.03)
+)
+
+# Crear la tabla con flextable
+tabla_flex <- flextable(tabla) %>%
+  set_header_labels(
+    Sendero = "Sendero",
+    b = "b",
+    `Std(b)` = "Std(b)"
+  ) %>%
+  add_header_row(
+    values = c("", "Resultados"),
+    colwidths = c(1, 2)
+  ) %>%
+  bold(i = c(6, 7), j = c(2, 3)) %>%
+  autofit()
+
+
+tabla_flex
+```
+
+
+
+- aaaaa 
+
+
 
 
