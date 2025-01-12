@@ -42,6 +42,8 @@ $link-color: $accent !default;
 $selection-bg: #85c1ca !default;
 
 
+
+
 /*-- scss:rules --*/
 
 .reveal a {
@@ -54,6 +56,14 @@ $selection-bg: #85c1ca !default;
   margin-top: 1.25em;
 }
 
+
+.date {
+  font-size: 0.65em; // Ajusta el tamaño de la fuente
+  color: black;
+  font-weight: bold;
+}
+
+
 // title and headings
 
 #title-slide {
@@ -63,14 +73,14 @@ $selection-bg: #85c1ca !default;
     color: $body-color;
     font-size: 1.4em;
     // font-weight: 350;
-    font-weight: lighter;
+    font-weight: normal;
   }
 
   .subtitle {
     color: $accent;
     font-style: italic;
     margin-top: 0em;
-    font-weight: lighter;
+    font-weight: normal;
   }
 
   .institute,
@@ -78,7 +88,8 @@ $selection-bg: #85c1ca !default;
   .quarto-title-author-email {
     font-style: italic;
     // font-size: 80%;
-    // color: #7F7F7F;
+    color: $body-color;
+    font-weight: normal;
   }
 
   .author,
@@ -94,10 +105,16 @@ $selection-bg: #85c1ca !default;
       padding-left: 0em;
       padding-right: 0em;
       width: 100%;
+    
     }
+      
+  
+  }
+    
+
   }
 
-}
+
 
 
 .reveal h2 {
@@ -303,6 +320,13 @@ $selection-bg: #85c1ca !default;
 // #| output-location: column
 // #| classes: columns3070
 
+.reveal .slides > section:first-child .reveal-date {
+    font-size: 0.4em !important; /* Ajusta el tamaño de la fuente */
+    color: pink;      /* Opcional: cambia el color */
+    text-align: center;
+}
+
+
 .reveal .columns3070 > div.column:first-child {
   width: 30%;
 }
@@ -327,3 +351,6 @@ $selection-bg: #85c1ca !default;
 .reveal .columns6040 div.column:not(:first-child) {
   width: 40%;
 }      
+
+
+

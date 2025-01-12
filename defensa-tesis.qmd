@@ -4,15 +4,29 @@ subtitle: Defensa para optar al título profesional de Socióloga
 format: 
   clean-revealjs:
     self-contained: true
+    slideNumber: false
 html-math-method:
   method: mathjax
   url: "https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
 author:
   - name: Moira Martínez Sembler
-    email: Facultad de Ciencias Sociales
-    affiliations: Universidad de Chile
-date: "2025-01-14"
+    email: Facultad de Ciencias Sociales. Universidad de Chile.
+    affiliations: "Profesora guía: Karina Navarro"
 lang: es
+header-includes: |
+  <style>
+    .reveal .slides>section:first-child::after {
+      content: "Trabajo desarrollado en el marco del proyecto FONDECYT N°1220385 'Mecanismos Autoreforzantes de los Ciclos de Protesta y los Estallidos Sociales'";
+      display: block;
+      font-size: 0.5em;
+      margin-top: 1em;
+      color: black;
+      text-align: left;
+    }
+    
+  </style>
+date: "2025-01-14"
+
 ---
 
 ## **Introducción**
@@ -59,71 +73,84 @@ intergrupal en la disposición a participar en protestas futuras de los espectad
 
 ## **Método**
 
-- Enfoque **cuantitativo**. 
-
-- Datos producidos a partir de la encuesta mixta de espectadores desarrollada por el equipo a cargo del proyecto FONDECYT Regular 1220385 *“Mecanismos autoreforzantes de los ciclos de protesta y los estallidos sociales”*.
+- Enfoque **cuantitativo**, encuesta mixta (online y presencial).
 
 - La población objetivo del estudio corresponde a los **espectadores de la protesta en
 Chile**. La muestra se encontró constituida por espectadores mayores de 18 años en Chile que no participaron en actividades relacionadas con las protestas en los últimos 5 años, exceptuando el Estallido Social.
 
-- Muestreo por cuotas representativas según nivel socioeconómico y género procurando preservar las
-diferencias proporcionales en población entre Santiago y Concepción. La muestra total alcanzó las **935 personas**.
+- Muestreo por cuotas representativas según nivel socioeconómico y género. Representación de Santiago y Concepción. La muestra total alcanzó las **935 personas**.
 
-- La estrategia de análisis consistió en 3 pasos: análisis descriptivo, análisis inferencial bivariado y análisis multivariado mediante modelos de ecuaciones estructurales.
+- El foco del análisis se encontró en la utilización de modelos de *ecuaciones estructurales*.
 
 
 ## **Resultados**
-### Modelo final
+### *Modelo teórico*
 
-![Figura 2. Resultados modelo final](input/modelo_resultados.jpeg)
+![Figura 1. Modelo hipotetizado](input/modelo_teorico.jpeg)
 
 ## **Resultados**
-### El rol de la identidad y la legitimidad.
-
-```{r}
-library(flextable)
-library(tidyverse)
-```
+### *Modelo final*
 
 
-```{r}
-# Crear un dataframe de ejemplo
-tabla <- data.frame(
-  Sendero = c(
-    "A. Identificación con los manifestantes → Disposición\na participar en futuras protestas",
-    "B. Identificación con los manifestantes → Legitimidad\nde la protesta → Disposición a participar en futuras protestas",
-    "C. Identificación con los manifestantes → Percepción\nde Carabineros como causantes de la violencia en las protestas → Disposición a participar en futuras protestas",
-    "D. Identificación con los manifestantes → Legitimidad\nde la protesta → Percepción de los manifestantes como causantes de la violencia en las protestas → Disposición a participar en futuras protestas",
-    "E. Identificación con los manifestantes → Legitimidad\nde la protesta → Percepción de Carabineros como causantes de la violencia en las protestas → Disposición a participar en futuras protestas",
-    "Total indirecto",
-    "Total (directo + indirectos)"
-  ),
-  b = c(0.25, 0.11, 0.08, 0.003, 0.06, 0.26, 0.51),
-  `Std(b)` = c(0.03, 0.02, 0.01, 0.002, 0.01, 0.02, 0.03)
-)
+![Figura 2. Modelo final](input/modelo_resultados.001.jpeg)
 
-# Crear la tabla con flextable
-tabla_flex <- flextable(tabla) %>%
-  set_header_labels(
-    Sendero = "Sendero",
-    b = "b",
-    `Std(b)` = "Std(b)"
-  ) %>%
-  add_header_row(
-    values = c("", "Resultados"),
-    colwidths = c(1, 2)
-  ) %>%
-  bold(i = c(6, 7), j = c(2, 3)) %>%
-  autofit()
+## **Resultados**
+### *Identificación con los manifestantes*
+
+![](input/modelo_resultados.002.jpeg)
 
 
-tabla_flex
-```
+## **Resultados**
+### *Identificación con los manifestantes*
 
+![](input/modelo_resultados.003.jpeg)
 
+## **Resultados**
+### *Identificación con los manifestantes*
 
-- aaaaa 
+![](input/modelo_resultados.004.jpeg)
 
+## **Resultados**
+### *Legitimidad de la protesta*
 
+![](input/modelo_resultados.005.jpeg)
+
+## **Resultados**
+### *Legitimidad de la protesta*
+
+![](input/modelo_resultados.006.jpeg)
+
+## **Resultados**
+### *Percepción de violencia*
+
+![](input/modelo_resultados.007.jpeg)
+
+## **Conclusiones**
+
+- **El espectador**, un actor novedoso, activo lector de las manifestaciones.
+
+- Los espectadores que se identifican más con los manifestantes y ven las protestas como legítimas son más propensos a participar en futuros actos de protesta. Evaluaciones contextuales pueden moldear su disposición
+hacia la protesta.
+
+- La percepción de los Carabineros como causantes de la violencia en las
+protestas también tiene un efecto positivo en la disposición a participar. Al percibir el actuar de Carabineros como injusto, los espectadores son capaces
+de posicionarse. 
+
+- Ausencia de relación entre culpar a los manifestantes de la violencia
+en las protestas y la futura participación de los espectadores en estas. Percepción de la violencia en las protestas por parte de los espectadores no
+es polarizada, sino más bien contextual. 
+
+## **Limitaciones y estudios futuros**
+
+- Operacionalización de variables. Considerar variables latentes.
+
+- Uso de variables de contexto como género, nivel educacional, ideología política, uso de medios de comunicación.
+
+- Medición a largo tiempo. observar las diferencias entre los espectadores que
+efectivamente asistieron a una protesta y quienes no asistieron a una protesta.
+
+- **Explorar a los espectadores en un escenario cada vez más incierto**. Trabajar en conceptualizar a este grupo. 
+
+# Muchas gracias {background-color="#40666e"}
 
 
