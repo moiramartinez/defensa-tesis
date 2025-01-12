@@ -37,7 +37,7 @@ date: "2025-01-14"
 posicionado dentro de las principales discusiones en el espacio público.
     - Estallido social de octubre de 2019, polarización del debate público, resurgimiento de ideas contrarias a la movilización...
     
-- Dentro de este contexto, las personas que no participan de las movilizaciones han sido poco estudiadas, en comparación con las personas que sí participan de este tipo de acción colectiva. Estos son los [espectadores.]{.fg style="--col: #38777d"}
+- Dentro de este contexto, las personas que no participan de las movilizaciones han sido poco estudiadas, en comparación con las personas que sí participan de este tipo de acción colectiva. Estos son los [espectadores.]{.fg style="--col: #38777d"}. Estos pueden definir el éxito o el fracaso de la acción colectiva, ya que dentro de esta amplia audiencia se encuentran potenciales aliados, pero también potenciales opositores.
 
 ## **Introducción** 
 
@@ -146,7 +146,7 @@ es polarizada, sino más bien contextual.
 
 - Uso de variables de contexto como género, nivel educacional, ideología política, uso de medios de comunicación.
 
-- Medición a largo tiempo. observar las diferencias entre los espectadores que
+- Medición a largo tiempo. Observar las diferencias entre los espectadores que
 efectivamente asistieron a una protesta y quienes no asistieron a una protesta.
 
 - **Explorar a los espectadores en un escenario cada vez más incierto**. Trabajar en conceptualizar a este grupo. 
